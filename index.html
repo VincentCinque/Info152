@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Week-10-JS-Library</title>
+</head>
+
+<body>
+<h1 class="pos_center">Customer Survey</h1>
+
+<p class="pos_center cap_first">we value your feedback</p>
+<!-- method post will post the users submit to the defined website in this case www.awebsite.com -->
+<form action="www.awebsite.com" method="post"> 
+<h1>User Survey</h1>
+<p>We value your Feedback!</p>
+<h2>name</h2>
+
+first name: <br>
+<input type="text" value="bob" id="fname" name="fname"><br>
+Last Name <br>
+<input type="text" value="Smith" id="lname" name="lname">
+<!-- Submit value will push the users input to the website shown in the form action www.awebsite.com -->
+<h2>Thank you <span id="fullname"></span></h2>
+<input type="submit" value="Submit">
+<input type="reset">
+
+
+</form>
+
+
+
+    <script src="js/scripts-dist.js"></script>
+
+</body>
+
+</html>
