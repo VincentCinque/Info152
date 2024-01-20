@@ -5,7 +5,7 @@ main {
     width: 450px;
     margin: 0 auto;
     padding: 1em;
-    background: white;
+    background: gray;
     border: 2px solid navy;
 }
 h1 {
@@ -29,6 +29,8 @@ label {
 #buttons input {
     float: left;
     margin-bottom: .5em;
+    background-color: red;
+   
 }
 br {
     clear: left;
