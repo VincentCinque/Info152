@@ -9,9 +9,9 @@
     $b = "good";
     $c = 33;
     $d = 33.5; /* this is a double*/
-    /* define is the same as a function in python "E" is def6ined and once called
+    /* define is the same as a function in python "E" is defined and once called
     Im a PHP constant other than a variable is output constant can only be assigned once*/
-    define("E", 'Im a PHP constant other than a variable');
+    define("E", "I'm a PHP constant other than a variable");
 
     /*concatenation combines two variables just like in python */
     $first_name = 'Bob';
