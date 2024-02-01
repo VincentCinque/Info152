@@ -1,0 +1,83 @@
+/*****************************************************************
+ *File Name: HW_INFO152/hw1/index.php
+ * Purpose: INFO152-HW1, Build and Enchance "Product Discount'
+ * Author: Vincent Cinque
+ * DrexelId: 14678062
+ * Complete Date: 04-Feb-2024 
+ ******************************************************************/
+
+header{
+    h2{
+        color: red;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+    
+}
+#logo-container{
+    display: flex;
+    justify-content: center;
+    img{
+        max-width: 300px;
+        border-radius: 100%;
+    }
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+main {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+    padding: 1em;
+    background: white;
+    border: 2px solid red;
+    background-color: black;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+h1 {
+    margin-top: 0;
+    color: red;
+}
+label {
+    width: 10em;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    color: white;
+}
+#data input {
+    float: left;
+    width: 15em;
+    margin-bottom: .5em;
+}
+#data span {
+    padding-left: .25em;
+}
+#buttons input {
+    margin-bottom: .5em;
+}
+br {
+    clear: left;
+}
+footer{
+    ul{
+        li{
+            display: inline-block;
+            margin-top: 15%;
+            margin-left: 14%;
+            margin-bottom: 0;
+            padding: 1%;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            
+        }
+    }
+
+}
