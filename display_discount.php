@@ -6,7 +6,11 @@
  * DrexelId: 14678062
  * Complete Date: 04-Feb-2024
  ********************************************************/
-
+$product_description = $_GET ['product_description'];
+$list_price = $_GET ['list_price'];
+$discount_percent = $_GET ['discount_percent'];
+$discount_amount = $list_price * $discount_percent * .01;
+$discount_price = $list_price - $discount_amount;
 ?>
 
 
@@ -19,22 +23,22 @@
 </head>
 <body>
     <main>
-        <h1>This page is under construction</h1>
+        <h1>Your Discount</h1>
 
         <label>Product Description:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo $product_description; ?></span><br> 
 
         <label>List Price:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo $list_price; ?></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo $discount_percent; ?></span><br>
 
         <label>Discount Amount:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo $discount_amount; ?></span><br>
 
         <label>Discount Price:</label>
-        <span><?php echo ''; ?></span><br>
+        <span><?php echo $discount_price; ?></span><br>
     </main>
 </body>
 </html>
