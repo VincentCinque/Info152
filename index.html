@@ -1,0 +1,59 @@
+<!--************************************************************** 
+* File Name: HW_INFO152/hw1/index.php
+ * Purpose: INFO152-HW1, Build and Enchance "Product Discount'
+ * Author: Vincent Cinque
+ * DrexelId: 14678062
+ * Complete Date: 04-Feb-2024
+ ******************************************************************-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Discount Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+<!-- adding styling to the page as well as linking to an image -->
+<body>
+    <main>
+        <!-- adding styling to the page as well as linking to an image -->
+        <section id="logo-container">
+            <img src="http://localhost/HW_INFO152/HW1/img/calc.jpg" alt="bubbles">
+            </section>
+        <h1>Product Discount Calculator</h1>
+        <form action="display_discount.php" method="get">
+    
+            <div id="data">
+                <label>Product Description:</label>
+                <input type="text" name="product_description"><br>
+
+                <label>List Price:</label>
+                <input type="text" name="list_price"><br>
+
+                <label>Discount Percent:</label>
+                <input type="text" name="discount_percent"><span>%</span><br>
+            </div>
+
+            <div id="buttons" class="btn">
+                <label>&nbsp;</label>
+                <input type="submit" value="Calculate Discount"><br>
+            </div>
+
+            
+
+        </form>
+    </main>
+    <!-- added list with blank links for styling purouse only -->
+    <footer>
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+    </footer>
+    <script src="js/scripts-dist.js"></script>
+</body>
+</html>
