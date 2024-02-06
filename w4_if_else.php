@@ -71,8 +71,13 @@ if(empty($month) || !is_numeric($months) || $months <=0){  ** check to make sure
 }
 
 */
- 
-
+$month1 = 5;
+$years = 3;
+$month = 0;
+$grade3 = 69;
+$grade2 = 79;
+$grade1 = 59;
+$grade = 89;
 $price1= 3;
 $price = 0;
 $message = 'Price must be greater than 0';
@@ -83,20 +88,93 @@ $message2 = 'good price'
 <html>
 <head>
 </head>   
-<body>
-<h1>if statement</h1>
+<body> 
+    <h1>if statement</h1>
     <p>Price: <?php if ($price <= 0){
         echo $message;
         }?></p>
 
 
-<h1>Else statement</h1>
+    <h1>Else statement</h1>
     <p>Price: <?php if ($price1 <= 0){
         echo $message;
         }else{
             echo $message2;
         }?></p>
 
+    <h1>If Else Statment</h1>
+        
+    <p>grade: <?php if ($grade >=89){
+            echo "A";
+        }elseif ($grade <=79){
+            echo "B";
+        }elseif ($grade <=69){
+            echo "C";
+        }elseif($grade <=59){
+            echo 'fail';
+        }?>
+    </p>
+
+    <p>grade: <?php if ($grade2 >=89){
+            echo "A";
+        }elseif ($grade2 >=79){
+            echo "B";
+        }elseif ($grade2 >=69){
+            echo "C";
+        }elseif($grade2 >=59){
+            echo 'fail';
+        }?>
+
+    </p>
+
+    <p>grade: <?php if ($grade3 >=89){
+            echo "A";
+        }elseif ($grade3 >=79){
+            echo "B";
+        }elseif ($grade3 >=69){
+            echo "C";
+        }elseif($grade3 >=59){
+            echo 'fail';
+        }?>
+
+    </p>
+
+    <p>grade: <?php if ($grade1 >=89){
+            echo "A";
+        }elseif ($grade1 >= 79){
+            echo "B";
+        }elseif ($grade1 >= 69){
+            echo "C";
+        }elseif($grade1 >= 59){
+            echo 'fail';
+        }?>
+    </p>
+
+    <h1>Nested If Statments</h1>
+
+    <p>Investments: <?php if(empty($month) || !is_numeric($month) || $month <=0){ 
+    echo 'Please enter a number of months > zero.';
+    }else{ 
+    $years = $month / 12;
+        if($years > 1){
+        echo 'A long-term investment.';
+        }else{
+        echo 'A short-term investment.';
+        }
+    }?>
+
+<p>Investments: <?php if(empty($month1) || !is_numeric($month1) || $month1 <=0){ 
+    echo 'Please enter a number of months > zero.';
+    }else{ 
+    $years = $month1 / 12;
+        if($years > 1){
+        echo 'A long-term investment.';
+        }else{
+        echo 'A short-term investment.';
+        }
+    }?>
+
+</p>
 
 </body>   
 
