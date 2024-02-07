@@ -38,6 +38,11 @@ $future_value = $investment; //declare a new variable and assign the investment 
 $counter = 1;
 $x = 0;
 $message = 1|2|3|4|5;
+
+while($i <= $years){
+    $future_value += $future_value * $interest_rate;
+    $i++;
+}  
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +76,7 @@ while($x <= 0){
     ?>
 </p>
 
-<p>For Loop
+<p>For Loop:
     <?php
     for($x = 0; $x <=10; $x++){
         echo "the Number Is: $x \n";
@@ -83,17 +88,7 @@ while($x <= 0){
 
 </p>
 
-<p>while loop that calculates the future value of a one time investment:
-<?php
-    while($i <= $years){
-        $future_value += $future_value * $interest_rate;
-        $i++;
-    }  
-
-    ?>
-
-</p>
-
+<h1>while loop that calculates the future value of a one time investment</h1>
 
 <p>Future value: <?php echo $future_value ?></p>
 
