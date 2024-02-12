@@ -84,12 +84,32 @@ $message = 'Price must be greater than 0';
 $message2 = 'good price';
 
 $my_num = 80;
+
 $first_name = 'customer name is:';
-$first_name = 'Bob';
+$first_name .= 'Bob';
 
 
 $message1 = $first_name;
 
+
+
+$discount_amount = NULL;
+
+$order_total = 5;
+
+// 3.1 add 10 if this condition is true
+if($order_total >= 300 && $order_total <= 400){
+     $discount_amount =  $order_total + 10;
+//3.2 multiply by 10 if this condition is true
+    }elseif ($order_total < 300){
+    $discount_amount  = $order_total * 10;
+//3.3 divide by 10 if this is true
+     }elseif($order_total > 800){
+    $discount_amount = $order_total / 10;
+//3.4 decrease the number by 1 if this conditions is tru
+ }else{
+     $discount_amount--;
+}
 
 
 
@@ -101,6 +121,8 @@ $message1 = $first_name;
 </head>   
 <body> 
     <h1>if statement</h1>
+
+    <p>discount: <?php echo $discount_amount; ?></p>
 
     <p>message <?php echo $message1; ?></p>
     <p>Price: <?php if ($price <= 0){
