@@ -81,7 +81,17 @@ $grade = 89;
 $price1= 3;
 $price = 0;
 $message = 'Price must be greater than 0';
-$message2 = 'good price'
+$message2 = 'good price';
+
+$my_num = 80;
+
+$first_name = 'Bob';
+
+$message1 = "Customers name is: " || $first_name;
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -90,6 +100,8 @@ $message2 = 'good price'
 </head>   
 <body> 
     <h1>if statement</h1>
+
+    <p>message <?php echo $message1; ?></p>
     <p>Price: <?php if ($price <= 0){
         echo $message;
         }?></p>
@@ -175,6 +187,14 @@ $message2 = 'good price'
     }?>
 
 </p>
+
+<p> message:<?php 
+
+if($my_num <= 100 && $my_num >= 60){
+    $message = "the number $my_num is less than 100 and more than 60";
+    echo $message;
+}
+  ?></p>
 
 </body>   
 
