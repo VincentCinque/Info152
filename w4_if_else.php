@@ -84,10 +84,11 @@ $message = 'Price must be greater than 0';
 $message2 = 'good price';
 
 $my_num = 80;
-
+$first_name = 'customer name is:';
 $first_name = 'Bob';
 
-$message1 = "Customers name is: " || $first_name;
+
+$message1 = $first_name;
 
 
 
