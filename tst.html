@@ -11,6 +11,31 @@
     <form action="post_tst.php" method="post">
         <p>Your Age:</p>
         <input type="text" name="age" value="">
+        
+    
+        <p>enter any text:</p>
+        <input type="text" name="text" value="">
+        
+
+        <h2>Age</h2>
+        <input type="radio" name= "age_2" value="18">
+        <label>18</label><br>
+        <input type="radio" name= "age_2" value="19">
+        <label>19</label><br>
+        <input type="radio" name= "age_2" value="20">
+        <label>20</label><br>
+        <input type="radio" name= "age_2" value="21">
+        <label>21</label><br>
+
+        <h2>Commute</h2>
+        <!-- the [] will send the multiple inputs to an array -->
+        <input type="checkbox" name="commute[]" value="Walk"> Walk <br>
+        <input type="checkbox" name="commute[]" value="Bus"> Bus <br>
+        <input type="checkbox" name="commute[]" value="Bike"> Bike <br>
+        <input type="checkbox" name="commute[]" value="Subway"> Subway <br>
+        <input type="checkbox" name="commute[]" value="Other"> Other <br>
+
+        <input type="submit" name="submitBtn" value="submit">
     </form>
 </body>
 
