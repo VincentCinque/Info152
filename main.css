@@ -1,0 +1,25 @@
+/*************************************************************
+ * File name: HW_INFO152/hw2/index.php
+ * Purpose: INFO152-HW2, Build and Enhance “Product Discount”
+ * Author: Vincent R. Cinque
+ * DrexelId: vrc45
+ * Complete Date: 2024/03/24
+ ************************************************************/
+
+ header{
+    h1{
+        color: red;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+        border: 2px solid black;
+    }
+}
+
+#age{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    padding: 10px;
+    border: 2px solid black;
+}
