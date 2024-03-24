@@ -11,6 +11,7 @@
  
 $searchCriteria = filter_input(INPUT_POST, 'age', FILTER_VALIDATE_INT);
 
+
 $dsn = 'mysql:host=localhost;dbname=HW2';
 $username = 'usr';
 $password = 'vrc45';
@@ -26,6 +27,8 @@ $statment->execute();
 $results = $statment->fetchAll();
 
 $statment->closeCursor();
+
+$age = $_POST ['age'];
 
 $author = ' by Vincent Cinque ';
 $current_date = date(' Y/m/d ');
@@ -45,7 +48,7 @@ $hw = ' for Info152-HW2';
  </header>
 
  <section id= "results">
-    <h2>Search Results</h2>
+    <h2>Below is the student info that matches your search criteria: Age =  <?php echo $age;?></h2>
     <?php
             foreach ($results as $result) {
                 echo "<h3> Student ID </h3>" . "{$result['student_ID']}";
@@ -59,7 +62,7 @@ $hw = ' for Info152-HW2';
  </section>
 
  <footer>
-   <section id= "footer">
+   <section id= "author">
    <p>Data retrieved on <?php echo $current_date . $author . $hw?></p>
    </section>
  </footer>

@@ -12,7 +12,18 @@
         display: flex;
         justify-content: center;
         margin-bottom: 3%;
-        border: 2px solid black;
+        
+    }
+}
+
+#logo-container{
+
+    img{
+        display: flex;
+        justify-content: center;
+        margin-left: 42%;
+        max-width: 300px;
+        margin-bottom: 3%;
     }
 }
 
@@ -21,5 +32,37 @@
     justify-content: center;
     margin-bottom: 10%;
     padding: 10px;
-    border: 2px solid black;
+
+    form{
+        border: 2px solid black;
+        padding: 2%;
+    }
+}
+
+
+
+footer{
+    ul{
+        li{
+            display: inline-block;
+            margin-top: 8%;
+            margin-left: 14%;
+            margin-bottom: 0;
+            padding: 1%;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            
+        }
+    }
+
+}
+
+#author{ 
+    color: gray;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 31%;
+    font-size: smaller;
 }
